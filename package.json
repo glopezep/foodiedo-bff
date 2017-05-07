@@ -1,0 +1,18 @@
+{
+  "name": "foodiedo-bff",
+  "version": "1.0.0",
+  "description": "Frotend App",
+  "main": "index.js",
+  "author": "Guillermo Lopez",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^2.3.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+  }
+}
