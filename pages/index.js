@@ -5,7 +5,7 @@ import SecondaryHeader from '../src/shared/components/SecondaryHeader';
 import ProductBox from '../src/product/components/ProductBox';
 import OrderBox from '../src/order/components/OrderBox';
 
-const Index = () => (
+const Index = props => (
   <div className="index">
     <Header>
       <p>Header text</p>
@@ -17,7 +17,7 @@ const Index = () => (
       </section>
       <section className="mainRight">
         <SecondaryHeader />
-        <OrderBox />
+        <OrderBox url={props.url}/>
       </section>
     </Main>
     <Footer />

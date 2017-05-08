@@ -4,7 +4,7 @@ import Main from '../src/shared/components/Main';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
 import OrderDetailList from '../src/order/components/OrderDetailList';
 
-const Payments = () => (
+const Payments = (props) => (
   <div className="index">
     <Header>
       <p>Header text</p>
@@ -12,7 +12,7 @@ const Payments = () => (
     <Main>
       <section className="mainLeft">
         <SecondaryHeader />
-        <OrderDetailList />
+        <OrderDetailList url={props.url} />
       </section>
     </Main>
     <Footer />

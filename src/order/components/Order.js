@@ -1,13 +1,16 @@
 import Button from '../../shared/components/Button';
 
-const Order = () => (
+const Order = props => (
   <article className="container">
     <div className="info">
       <span>Order (117)</span>
       <span>Pending</span>
     </div>
-    <div className="actions">
-      <Button>Cancel</Button>
+    <div
+      className="actions"
+      style={props.url.pathname !== '/orders' ? {'justifyContent': 'flex-end'} : null }
+    >
+      {props.url.pathname === '/orders' && <Button>Cancel</Button>}
       <Button success="true">Complete</Button>
     </div>
 

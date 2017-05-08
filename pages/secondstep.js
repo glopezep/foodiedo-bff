@@ -5,7 +5,7 @@ import Advertising from '../src/shared/components/Advertising';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
 import OrderBox from '../src/order/components/OrderBox';
 
-const SecondStep = () => (
+const SecondStep = props => (
   <div className="index">
     <Header>
       <p>Header text</p>
@@ -17,7 +17,7 @@ const SecondStep = () => (
       </section>
       <section className="mainRight">
         <SecondaryHeader />
-        <OrderBox />
+        <OrderBox url={props.url}/>
       </section>
     </Main>
     <Footer />

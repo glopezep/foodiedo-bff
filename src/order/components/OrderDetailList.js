@@ -1,11 +1,11 @@
 import OrderDetail from './OrderDetail';
 
-const OrderDetailList = () => (
+const OrderDetailList = props => (
   <div className="container">
-    <OrderDetail />
-    <OrderDetail />
-    <OrderDetail />
-    <OrderDetail />
+    <OrderDetail url={props.url}/>
+    <OrderDetail url={props.url}/>
+    <OrderDetail url={props.url}/>
+    <OrderDetail url={props.url}/>
 
     <style jsx>{`
       .container {

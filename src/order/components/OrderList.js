@@ -1,13 +1,8 @@
 import Order from './Order';
 
-const OrderList = () => (
+const OrderList = props => (
   <div className="container">
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
+    <Order url={props.url}/>
 
     <style jsx>{`
       .container {
