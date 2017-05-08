@@ -3,6 +3,7 @@ import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
 import Advertising from '../src/shared/components/Advertising';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
+import Title from '../src/shared/components/Title';
 import OrderBox from '../src/order/components/OrderBox';
 
 const SecondStep = props => (
@@ -12,11 +13,15 @@ const SecondStep = props => (
     </Header>
     <Main>
       <section className="mainLeft">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order(117) - Pending</Title>
+        </SecondaryHeader>
         <Advertising />
       </section>
       <section className="mainRight">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order Products</Title>
+        </SecondaryHeader>
         <OrderBox url={props.url}/>
       </section>
     </Main>

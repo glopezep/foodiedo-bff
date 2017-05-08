@@ -13,7 +13,7 @@ const Attending = (props) => (
     <Main>
       <section className="mainLeft">
         <SecondaryHeader>
-          <Title>Order(117)</Title>
+          <Title>Order List</Title>
         </SecondaryHeader>
         <OrderDetailList url={props.url} />
       </section>

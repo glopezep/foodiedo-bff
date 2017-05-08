@@ -4,6 +4,7 @@ import Main from '../src/shared/components/Main';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
 import Title from '../src/shared/components/Title';
 import ProductBox from '../src/product/components/ProductBox';
+import FilterForm from '../src/product/components/FilterForm';
 import OrderBox from '../src/order/components/OrderBox';
 
 const Index = props => (
@@ -15,11 +16,14 @@ const Index = props => (
       <section className="mainLeft">
         <SecondaryHeader>
           <Title>Product List</Title>
+          <FilterForm />
         </SecondaryHeader>
         <ProductBox />
       </section>
       <section className="mainRight">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order</Title>
+        </SecondaryHeader>
         <OrderBox url={props.url}/>
       </section>
     </Main>

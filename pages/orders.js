@@ -20,7 +20,9 @@ const Orders = props => (
         <OrderList url={props.url}/>
       </section>
       <section className="mainRight">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order Products</Title>
+        </SecondaryHeader>
         <OrderBox url={props.url}/>
       </section>
     </Main>

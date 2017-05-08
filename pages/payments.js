@@ -3,6 +3,7 @@ import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
 import Advertising from '../src/shared/components/Advertising';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
+import Title from '../src/shared/components/Title';
 import OrderBox from '../src/order/components/OrderBox';
 import OrderList from '../src/order/components/OrderList';
 
@@ -13,11 +14,15 @@ const Payments = props => (
     </Header>
     <Main>
       <section className="mainLeft">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order List</Title>
+        </SecondaryHeader>
         <OrderList url={props.url}/>
       </section>
       <section className="mainRight">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order Products</Title>
+        </SecondaryHeader>
         <OrderBox url={props.url}/>
       </section>
     </Main>
