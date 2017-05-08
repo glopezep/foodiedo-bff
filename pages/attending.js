@@ -1,10 +1,8 @@
 import Footer from '../src/shared/components/Footer';
 import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
-import Advertising from '../src/shared/components/Advertising';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
-import OrderBox from '../src/order/components/OrderBox';
-import OrderList from '../src/order/components/OrderList';
+import OrderDetailList from '../src/order/components/OrderDetailList';
 
 const Payments = () => (
   <div className="index">
@@ -14,32 +12,7 @@ const Payments = () => (
     <Main>
       <section className="mainLeft">
         <SecondaryHeader />
-        <div className="u-container">
-          <div className="u-max-width">
-            <SecondaryHeader>
-              <span>Order (117)</span>
-            </SecondaryHeader>
-            <OrderBox />
-          </div>
-          <div className="u-max-width">
-            <SecondaryHeader>
-              <span>Order (117)</span>
-            </SecondaryHeader>
-            <OrderBox />
-          </div>
-          <div className="u-max-width">
-            <SecondaryHeader>
-              <span>Order (117)</span>
-            </SecondaryHeader>
-            <OrderBox />
-          </div>
-          <div className="u-max-width">
-            <SecondaryHeader>
-              <span>Order (117)</span>
-            </SecondaryHeader>
-            <OrderBox />
-          </div>
-        </div>
+        <OrderDetailList />
       </section>
     </Main>
     <Footer />
@@ -68,16 +41,6 @@ const Payments = () => (
       .mainRight {
         padding: 1em;
         width: 255px;
-      }
-
-      .u-container {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .u-max-width {
-        flex: 1;
-        margin: 0 1em;
       }
     `}</style>
   </div>
