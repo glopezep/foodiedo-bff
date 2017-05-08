@@ -22,6 +22,10 @@ const Button = props => (
       .container.success {
         background-color: #2ecc71;
       }
+
+      .container.success:hover {
+        background-color: #378a57;
+      }
     `}</style>
   </button>
 );

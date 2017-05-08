@@ -2,6 +2,7 @@ import Footer from '../src/shared/components/Footer';
 import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
+import Title from '../src/shared/components/Title';
 import ProductBox from '../src/product/components/ProductBox';
 import OrderBox from '../src/order/components/OrderBox';
 
@@ -12,7 +13,9 @@ const Index = props => (
     </Header>
     <Main>
       <section className="mainLeft">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Product List</Title>
+        </SecondaryHeader>
         <ProductBox />
       </section>
       <section className="mainRight">

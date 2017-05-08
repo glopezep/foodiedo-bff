@@ -3,17 +3,20 @@ import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
 import Advertising from '../src/shared/components/Advertising';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
+import Title from '../src/shared/components/Title';
 import OrderBox from '../src/order/components/OrderBox';
 import OrderList from '../src/order/components/OrderList';
 
-const Payments = props => (
+const Orders = props => (
   <div className="index">
     <Header>
       <p>Header text</p>
     </Header>
     <Main>
       <section className="mainLeft">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order List</Title>
+        </SecondaryHeader>
         <OrderList url={props.url}/>
       </section>
       <section className="mainRight">
@@ -52,4 +55,4 @@ const Payments = props => (
   </div>
 );
 
-export default Payments;
+export default Orders;

@@ -2,16 +2,19 @@ import Footer from '../src/shared/components/Footer';
 import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
+import Title from '../src/shared/components/Title';
 import OrderDetailList from '../src/order/components/OrderDetailList';
 
-const Payments = (props) => (
+const Attending = (props) => (
   <div className="index">
     <Header>
       <p>Header text</p>
     </Header>
     <Main>
       <section className="mainLeft">
-        <SecondaryHeader />
+        <SecondaryHeader>
+          <Title>Order(117)</Title>
+        </SecondaryHeader>
         <OrderDetailList url={props.url} />
       </section>
     </Main>
@@ -46,4 +49,4 @@ const Payments = (props) => (
   </div>
 );
 
-export default Payments;
+export default Attending;
