@@ -5,7 +5,7 @@ import Button from '../../shared/components/Button';
 
 const OrderBox = props => (
   <div>
-    <OrderProductList />
+    <OrderProductList url={props.url}/>
     <TotalPrice />
     {props.url.pathname === '/' && (
       <Link href="/secondstep">

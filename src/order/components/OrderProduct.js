@@ -1,8 +1,8 @@
-const OrderProduct = () => (
+const OrderProduct = props => (
   <article className="container">
     <span>Orange Juice</span>
     <span>RD$120</span>
-    <span>X</span>
+    {props.url.pathname === '/' && <span>X</span>}  
 
     <style jsx>{`
       .container {

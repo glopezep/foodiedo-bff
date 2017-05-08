@@ -1,12 +1,12 @@
 import OrderProduct from './OrderProduct';
 
-const OrderProductList = () => (
+const OrderProductList = props => (
   <div>
-    <OrderProduct />
-    <OrderProduct />
-    <OrderProduct />
-    <OrderProduct />
-    <OrderProduct />
+    <OrderProduct url={props.url}/>
+    <OrderProduct url={props.url}/>
+    <OrderProduct url={props.url}/>
+    <OrderProduct url={props.url}/>
+    <OrderProduct url={props.url}/>
   </div>
 );
 
