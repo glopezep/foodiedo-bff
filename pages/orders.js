@@ -1,11 +1,12 @@
 import Footer from '../src/shared/components/Footer';
 import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
+import Advertising from '../src/shared/components/Advertising';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
-import ProductBox from '../src/product/components/ProductBox';
 import OrderBox from '../src/order/components/OrderBox';
+import OrderList from '../src/order/components/OrderList';
 
-const Index = () => (
+const Payments = () => (
   <div className="index">
     <Header>
       <p>Header text</p>
@@ -13,7 +14,7 @@ const Index = () => (
     <Main>
       <section className="mainLeft">
         <SecondaryHeader />
-        <ProductBox />
+        <OrderList />
       </section>
       <section className="mainRight">
         <SecondaryHeader />
@@ -51,4 +52,4 @@ const Index = () => (
   </div>
 );
 
-export default Index;
+export default Payments;

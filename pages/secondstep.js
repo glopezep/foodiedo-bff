@@ -3,7 +3,7 @@ import Header from '../src/shared/components/Header';
 import Main from '../src/shared/components/Main';
 import Advertising from '../src/shared/components/Advertising';
 import SecondaryHeader from '../src/shared/components/SecondaryHeader';
-import Order from '../src/order/components/Order';
+import OrderBox from '../src/order/components/OrderBox';
 
 const SecondStep = () => (
   <div className="index">
@@ -17,7 +17,7 @@ const SecondStep = () => (
       </section>
       <section className="mainRight">
         <SecondaryHeader />
-        <Order />
+        <OrderBox />
       </section>
     </Main>
     <Footer />

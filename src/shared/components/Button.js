@@ -1,5 +1,5 @@
 const Button = props => (
-  <button className="container">
+  <button className={props.success ? 'container success' : 'container'}>
     {props.children}
 
     <style jsx>{`
@@ -9,7 +9,7 @@ const Button = props => (
         color: #fff;
         cursor: pointer;
         font-size: .8em;
-        padding: 1em 0;
+        padding: .8em 0;
         transition: all .2s ease;
         text-transform: uppercase;
         width: 110px;
@@ -17,6 +17,10 @@ const Button = props => (
 
       .container:hover {
         background-color: #9b5555;
+      }
+
+      .container.success {
+        background-color: #2ecc71;
       }
     `}</style>
   </button>
