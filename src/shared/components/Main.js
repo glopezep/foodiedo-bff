@@ -8,6 +8,9 @@ const Main = props => (
         background: #f0eff0;
         display: flex;
         flex: 1;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
       }
     `}</style>
   </main>

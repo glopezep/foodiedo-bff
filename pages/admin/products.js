@@ -42,6 +42,7 @@ const Products = props => (
       }
 
       .index {
+        background: #f0eff0;
         display: flex;
         flex-direction: column;
         height: 100vh;
