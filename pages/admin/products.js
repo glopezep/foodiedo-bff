@@ -6,6 +6,7 @@ import Title from '../../src/shared/components/Title';
 import ProductBox from '../../src/product/components/ProductBox';
 import FilterForm from '../../src/product/components/FilterForm';
 import OrderBox from '../../src/order/components/OrderBox';
+import ProductList from '../../src/admin/components/ProductList'
 
 const Products = props => (
   <div className="index">
@@ -18,6 +19,7 @@ const Products = props => (
           <Title>Product List</Title>
           <FilterForm />
         </SecondaryHeader>
+        <ProductList />
       </section>
       <section className="mainRight">
       </section>
@@ -35,14 +37,15 @@ const Products = props => (
       .index {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        height: 100vh;
+        max-height: 100vh;
       }
 
       .mainLeft {
-        display: flex;
         flex: 1;
         flex-direction: column;
         padding: 1em;
+        overflow: auto;
       }
 
       .mainRight {
