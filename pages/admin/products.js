@@ -8,6 +8,7 @@ import FilterForm from '../../src/product/components/FilterForm';
 import OrderBox from '../../src/order/components/OrderBox';
 import ProductList from '../../src/admin/components/ProductList'
 import CreateCategoryForm from '../../src/admin/components/CreateCategoryForm'
+import CreateProductForm from '../../src/admin/components/CreateProductForm'
 
 
 const Products = props => (
@@ -25,6 +26,7 @@ const Products = props => (
       </section>
       <section className="mainRight">
         <CreateCategoryForm />
+        <CreateProductForm />
       </section>
     </Main>
     <Footer />
@@ -35,6 +37,8 @@ const Products = props => (
         margin: 0;
         padding: 0;
         list-style: none;
+        font-family: sans-serif;
+        font-weight: normal;
       }
 
       .index {
