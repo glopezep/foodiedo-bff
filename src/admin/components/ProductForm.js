@@ -32,7 +32,7 @@ const ProductForm = props => (
       }
 
       .input {
-        height: 20px;
+        height: 30px;
         padding: 0 1em;
       }
 
@@ -44,7 +44,7 @@ const ProductForm = props => (
         background-color: #c76b6b;
         border: none;
         color: #fff;
-        height: 25px;
+        height: 34px;
         text-transform: uppercase;
       }
 

@@ -4,6 +4,9 @@ const ProductList = () => (
   <div>
     <Product />
     <Product />
+    <Product />
+    <Product />
+    <Product />
 
     <style jsx>{`
       .container {

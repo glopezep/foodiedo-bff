@@ -7,6 +7,8 @@ import ProductBox from '../../src/product/components/ProductBox';
 import FilterForm from '../../src/product/components/FilterForm';
 import OrderBox from '../../src/order/components/OrderBox';
 import ProductList from '../../src/admin/components/ProductList'
+import CreateCategoryForm from '../../src/admin/components/CreateCategoryForm'
+
 
 const Products = props => (
   <div className="index">
@@ -22,6 +24,7 @@ const Products = props => (
         <ProductList />
       </section>
       <section className="mainRight">
+        <CreateCategoryForm />
       </section>
     </Main>
     <Footer />
