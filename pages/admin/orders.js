@@ -3,13 +3,9 @@ import Header from '../../src/shared/components/Header';
 import Main from '../../src/shared/components/Main';
 import SecondaryHeader from '../../src/shared/components/SecondaryHeader';
 import Title from '../../src/shared/components/Title';
-import FilterForm from '../../src/product/components/FilterForm';
-import ProductList from '../../src/admin/product/components/ProductList'
-import CreateCategoryForm from '../../src/admin/product/components/CreateCategoryForm'
-import CreateProductForm from '../../src/admin/product/components/CreateProductForm'
+import OrderBox from '../../src/order/components/OrderBox';
 
-
-const Products = props => (
+const Orders = props => (
   <div className="index">
     <Header>
       <p>Header text</p>
@@ -17,14 +13,11 @@ const Products = props => (
     <Main>
       <section className="mainLeft">
         <SecondaryHeader>
-          <Title>Product List</Title>
-          <FilterForm />
+          <Title>Order List</Title>
         </SecondaryHeader>
-        <ProductList />
       </section>
       <section className="mainRight">
-        <CreateCategoryForm />
-        <CreateProductForm />
+        <OrderBox url={props.url} />
       </section>
     </Main>
     <Footer />
@@ -62,4 +55,4 @@ const Products = props => (
   </div>
 );
 
-export default Products;
+export default Orders;
