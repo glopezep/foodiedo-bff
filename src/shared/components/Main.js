@@ -9,7 +9,7 @@ const Main = props => (
         display: flex;
         flex: 1;
         width: 100%;
-        max-width: 960px;
+        max-width: 1024px;
         margin: 0 auto;
       }
     `}</style>

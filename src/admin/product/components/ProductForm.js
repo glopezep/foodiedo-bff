@@ -41,9 +41,6 @@ const ProductForm = props => (
       }
 
       .select {
-        background-color: #c76b6b;
-        border: none;
-        color: #fff;
         height: 34px;
         text-transform: uppercase;
       }

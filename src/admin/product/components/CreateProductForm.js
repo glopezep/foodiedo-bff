@@ -1,4 +1,4 @@
-import Button from '../../shared/components/Button'
+import Button from '../../../shared/components/Button'
 
 const CreateProductForm = () => (
   <form className="container">
@@ -6,11 +6,14 @@ const CreateProductForm = () => (
       <h3>Add new product</h3>
     </header>
     <div className="group">
-      <input className="input" type="text" placeholder="Category Name"/>
-      <input className="input" type="text" placeholder="Category Name"/>
+      <input className="input" type="text" placeholder="Name"/>
+      <input className="input" type="text" placeholder="Price"/>
       <select className="select">
         <option>Category</option>
       </select>
+      <label className="file" for="file">File
+        <input className="file" type="file" id="file" style={{ display: 'none' }}/>
+      </label>
       <Button>Add</Button>
     </div>
 
@@ -19,6 +22,19 @@ const CreateProductForm = () => (
         display: flex;
         flex-direction: column;
         margin-bottom: 1em;
+      }
+
+      .file {
+        align-items: center;
+        background-color: #c76b6b;
+        color: #fff;
+        display: flex;
+        font-size: .8em;
+        height: 30px;
+        justify-content: center;
+        margin-bottom: 1em;
+        padding: 0 1em;
+        text-transform: uppercase;
       }
 
       .group {
@@ -38,7 +54,11 @@ const CreateProductForm = () => (
       }
 
       .input {
+        align-items: center;
+        border: 1px solid silver;
+        display: flex;
         height: 30px;
+        justify-content: center;
         margin-bottom: 1em;
         padding: 0 1em;
       }

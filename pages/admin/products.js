@@ -6,9 +6,9 @@ import Title from '../../src/shared/components/Title';
 import ProductBox from '../../src/product/components/ProductBox';
 import FilterForm from '../../src/product/components/FilterForm';
 import OrderBox from '../../src/order/components/OrderBox';
-import ProductList from '../../src/admin/components/ProductList'
-import CreateCategoryForm from '../../src/admin/components/CreateCategoryForm'
-import CreateProductForm from '../../src/admin/components/CreateProductForm'
+import ProductList from '../../src/admin/product/components/ProductList'
+import CreateCategoryForm from '../../src/admin/product/components/CreateCategoryForm'
+import CreateProductForm from '../../src/admin/product/components/CreateProductForm'
 
 
 const Products = props => (
